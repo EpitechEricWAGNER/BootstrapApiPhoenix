@@ -31,13 +31,13 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
 
 # Routes
 
-`ewagner@webServer:/var/www/xxx$ mix phx.routes
-    GET     /api/users       TodolistWeb.UserController :index
-    GET     /api/users/:id   TodolistWeb.UserController :show
-    POST    /api/users       TodolistWeb.UserController :create
-    PATCH   /api/users/:id   TodolistWeb.UserController :update
-    PUT     /api/users/:id   TodolistWeb.UserController :update
-    DELETE  /api/users/:id   TodolistWeb.UserController :delete
-    WS      /live/websocket  Phoenix.LiveView.Socket
-    GET     /live/longpoll   Phoenix.LiveView.Socket
-    POST    /live/longpoll   Phoenix.LiveView.Socket`
+ewagner@webServer:/var/www/xxx$ mix phx.routes
+GET /api/users TodolistWeb.UserController :index
+GET /api/users/:id TodolistWeb.UserController :show
+POST /api/users TodolistWeb.UserController :create
+PATCH /api/users/:id TodolistWeb.UserController :update
+PUT /api/users/:id TodolistWeb.UserController :update
+DELETE /api/users/:id TodolistWeb.UserController :delete
+WS /live/websocket Phoenix.LiveView.Socket
+GET /live/longpoll Phoenix.LiveView.Socket
+POST /live/longpoll Phoenix.LiveView.Socket
