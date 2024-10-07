@@ -28,3 +28,16 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
 `mix phx.gen.schema Task tasks title:string description:text status:string user_id:references:users`
 
 `mix ecto.migrate`
+
+# Routes
+
+`ewagner@webServer:/var/www/xxx$ mix phx.routes
+    GET     /api/users       TodolistWeb.UserController :index
+    GET     /api/users/:id   TodolistWeb.UserController :show
+    POST    /api/users       TodolistWeb.UserController :create
+    PATCH   /api/users/:id   TodolistWeb.UserController :update
+    PUT     /api/users/:id   TodolistWeb.UserController :update
+    DELETE  /api/users/:id   TodolistWeb.UserController :delete
+    WS      /live/websocket  Phoenix.LiveView.Socket
+    GET     /live/longpoll   Phoenix.LiveView.Socket
+    POST    /live/longpoll   Phoenix.LiveView.Socket`
